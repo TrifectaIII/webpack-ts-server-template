@@ -8,9 +8,9 @@ module.exports = {
     devtool: false,
     entry: path.resolve(__dirname, './src/index.ts'),
 
-    // settings for dev server (npm start)
+    // settings for dev server (webpack serve)
     devServer: {
-        static: path.join(__dirname, 'docs'),
+        static: path.join(__dirname, 'build'),
         compress: true,
         port: 8000,
     },
@@ -45,6 +45,6 @@ module.exports = {
     // filename of output js, and path for all build files
     output: {
         filename: '[id].bundle.js',
-        path: path.resolve(__dirname, './docs'),
+        path: path.resolve(__dirname, './build'),
     },
 };
