@@ -8,6 +8,4 @@ const port: number = 3000;
 app.use('/', express.static(path.resolve('./build')));
 
 //listen at port
-app.listen(port, () => {
-    console.log(`App listening at http://localhost:${port}`)
-});
+app.listen(port, () => console.log(`App listening at http://localhost:${port}`));
