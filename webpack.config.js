@@ -6,7 +6,7 @@ module.exports = {
     // devtool: 'source-map',
     mode: 'production',
     devtool: false,
-    entry: path.resolve(__dirname, './src/index.ts'),
+    entry: path.resolve(__dirname, './client/index.ts'),
 
     // settings for dev server (webpack serve)
     devServer: {
@@ -38,7 +38,7 @@ module.exports = {
     //will build html from src file, injecting script tag automatically.
     plugins: [
         new HTMLWebpackPlugin({
-            template: 'src/index.html',
+            template: './client/index.html',
         }),
     ],
 
