@@ -2,10 +2,10 @@ const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    // mode: 'development',
-    // devtool: 'source-map',
-    mode: 'production',
-    devtool: false,
+    mode: 'development',
+    devtool: 'source-map',
+    // mode: 'production',
+    // devtool: false,
     entry: path.resolve(__dirname, './client/index.ts'),
 
     // settings for dev server (webpack serve)
